@@ -616,6 +616,10 @@ public class CatalogPieceOfFurniture implements Comparable<CatalogPieceOfFurnitu
   }
 
   /**
+   * Returns the volume of the furniture.
+   */
+   public float getVolume() { return this.getWidth()*this.getHeight()*this.getDepth();}
+  /**
    * Returns the elevation at which should be placed an object dropped on this piece.
    * @return a percentage of the height of this piece. A negative value means that the piece 
    *         should be ignored when an object is dropped on it. 
